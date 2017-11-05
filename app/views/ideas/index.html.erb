@@ -8,7 +8,7 @@
       # link_to image_tag("path/to/image.png"), "http://www.mysite.com/"
       %>
       <%= link_to image_tag(idea.picture_url, width: "100%"), idea if idea.picture.present? %>
-        <h4><%= link_to idea.name, idea %></h4>
+        <h4><div class="rainbow"><%= link_to idea.name, idea, :class => 'rainbow' %></div></h4>
         <%= idea.description %>
       </div>
     <% end %>
